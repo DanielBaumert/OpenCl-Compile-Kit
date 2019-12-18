@@ -30,7 +30,7 @@ now open "Developer Command Prompt for VS 2019"
 	-> e.g.: cd C:\Users\[Username]\Documents\[OpenCL]\OpenCL-ICD-Loader\build 
 > cmake ..
 > msbuild OPENCL_ICD_LOADER.sln /p:Configuration=Release
-```cmd
+```
 
 You will find the dll inside the build folder in Release folder :D
 
