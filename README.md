@@ -14,7 +14,7 @@ Open the software folder or download the software below
 > Now hit the "Open PowerShell window here" menu-item.<br/>
 # Build and Compile
 ## Powershell
-Dowload the reposetories [Optinal]
+Dowload the repositories [Optinal]
 ```cmd
 > git clone https://github.com/KhronosGroup/OpenCL-Headers.git
 > git clone https://github.com/KhronosGroup/OpenCL-ICD-Loader
