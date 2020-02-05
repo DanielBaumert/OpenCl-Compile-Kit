@@ -31,7 +31,7 @@ now open "Developer Command Prompt for VS 2019"
 
 ## Developer Command Prompt for VS 2019
 ```cmd
-> cd path/to/OpenCL-ICD-Loader/build #e.g.:
+> cd path/to/OpenCL-ICD-Loader/build
 ```
 e.g.: ```cd C:\[...]\[OpenCL]\OpenCL-ICD-Loader\build```
 ```cmd
