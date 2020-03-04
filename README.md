@@ -47,11 +47,11 @@ Setup the ICD-Loader
 ```cmd
 > mkdir OpenCL-ICD-Loader/inc/CL
 > mkdir OpenCL-ICD-Loader/build 
-> cp -r OpenCL-Headers/CL/ OpenCL-ICD-Loader/inc/CL
+> cp -r OpenCL-Headers/CL/* OpenCL-ICD-Loader/inc/CL
 ```
 ##### Compile
 ```cmd
-> cd OpenCL-ICD-Loader\build
+> cd OpenCL-ICD-Loader/build
 > cmake -DCMAKE_BUILD_TYPE=Release ..   
 > make
 ```
