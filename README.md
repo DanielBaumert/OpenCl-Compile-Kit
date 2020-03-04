@@ -1,5 +1,5 @@
 !! To complie the [OpenCL-Dll]/[OpenCL-so] <b>USER A VIRTUALMASCHINE</b> you will need a labertory environment!!<br/>
-> 12/18/2019
+> 03/04/2020
 ```cmd 
 > git clone --recursive https://github.com/facebamm/OpenCl-Compile-Kit.git
 ```
