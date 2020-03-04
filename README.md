@@ -45,8 +45,8 @@ Dowload the repositories
 ```
 Setup the ICD-Loader 
 ```cmd
-> mkdir OpenCL-ICD-Loader\inc\CL
-> mkdir OpenCL-ICD-Loader\build 
+> mkdir OpenCL-ICD-Loader/inc/CL
+> mkdir OpenCL-ICD-Loader/build 
 > cp -r OpenCL-Headers/CL/ OpenCL-ICD-Loader/inc/CL
 ```
 ##### Compile
