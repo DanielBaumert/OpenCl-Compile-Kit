@@ -1,9 +1,10 @@
-!! To complie the OpenCL-Dll <b>USER A VIRTUALMASCHINE</b> you will need a labertory environment!!<br/>
+!! To complie the [OpenCL-Dll]/[OpenCL-so] <b>USER A VIRTUALMASCHINE</b> you will need a labertory environment!!<br/>
 > 12/18/2019
 ```cmd 
 > git clone --recursive https://github.com/facebamm/OpenCl-Compile-Kit.git
 ```
-# Install
+
+### Install - Only windows user
 Open the software folder or download the software below
 1. run git install<br/>
 2. run vs_BuildTools install<br/>
@@ -13,12 +14,10 @@ Open the software folder or download the software below
 > Under the documents create new folder named "OpenCL", move into it.<br/>
 > Click into the space of that folder and then hold shift and press right-mouse. <br/> 
 > Now hit the "Open PowerShell window here" menu-item.<br/>
-# Build and Compile
-## Powershell
-Dowload the repositories [Optinal]
+### Build and Compile
+#### Powershell(Windows)
 ```cmd
-> git clone https://github.com/KhronosGroup/OpenCL-Headers.git
-> git clone https://github.com/KhronosGroup/OpenCL-ICD-Loader
+> git clone --recursive https://github.com/facebamm/OpenCl-Compile-Kit.git
 ```
 Setup the ICD-Loader 
 ```cmd
@@ -29,7 +28,7 @@ Setup the ICD-Loader
 ```
 now open "Developer Command Prompt for VS 2019"
 
-## Developer Command Prompt for VS 2019
+##### Developer Command Prompt for VS 2019 / Compile
 ```cmd
 > cd path/to/OpenCL-ICD-Loader/build
 ```
@@ -38,8 +37,25 @@ e.g.: ```cd C:\[...]\[OpenCL]\OpenCL-ICD-Loader\build```
 > cmake ..
 > msbuild OPENCL_ICD_LOADER.sln /p:Configuration=Release
 ```
-
 You will find the dll inside the build folder in Release folder :D
+#### Terminal(Linux)
+Dowload the repositories 
+```cmd
+> git clone --recursive https://github.com/facebamm/OpenCl-Compile-Kit.git
+```
+Setup the ICD-Loader 
+```cmd
+> mkdir .\OpenCL-ICD-Loader\inc\CL
+> mkdir .\OpenCL-ICD-Loader\build 
+> cp -r OpenCL-Headers/CL/* OpenCL-ICD-Loader/inc/CL
+```
+##### Compile
+```cmd
+> cd OpenCL-ICD-Loader\build
+> cmake -DCMAKE_BUILD_TYPE=Release ..   
+> make
+```
+You will find the so files inside the build folder :D
 
 # Version
 to change the version you have only to replace the headerfiles inside the ``OpenCL-Headers/CL/`` folder
